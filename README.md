@@ -44,3 +44,10 @@ Install the package in editable mode using pip:
 ```bash
 pip install -e .
 ```
+
+## Logging and Analysis
+
+Training scripts now integrate a simple `Logger` utility based on
+TensorBoard. Logs are stored under `microgrid-fedrl/results/runs` and can be
+visualized using TensorBoard or the Jupyter notebook found at
+`analysis/plot_results.ipynb`.
