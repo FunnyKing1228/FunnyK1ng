@@ -28,3 +28,10 @@ The code currently provides minimal placeholders for key components such as
 `SafetyNet`, `LocalTrainer`, and a simple `fed_avg` aggregator. Further
 implementation is required to realize the full functionality described in the
 project blueprint.
+
+## Logging and Analysis
+
+Training scripts now integrate a simple `Logger` utility based on
+TensorBoard. Logs are stored under `microgrid-fedrl/results/runs` and can be
+visualized using TensorBoard or the Jupyter notebook found at
+`analysis/plot_results.ipynb`.
