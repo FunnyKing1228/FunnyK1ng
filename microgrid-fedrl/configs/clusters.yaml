@@ -1,0 +1,12 @@
+ClusterA:
+  - client_0
+  - client_1
+  - client_2
+ClusterB:
+  - client_3
+  - client_4
+  - client_5
+ClusterC:
+  - client_6
+  - client_7
+  - client_8
