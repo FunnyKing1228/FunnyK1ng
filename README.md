@@ -28,3 +28,19 @@ The code currently provides minimal placeholders for key components such as
 `SafetyNet`, `LocalTrainer`, and a simple `fed_avg` aggregator. Further
 implementation is required to realize the full functionality described in the
 project blueprint.
+
+## Environment and Scenario Generation
+
+The `src/envs` package contains a simple `MicrogridEnv` class along with a
+`make_random_scenario` helper which generates YAML configuration files for a set
+of clients. By default it produces 9 client files under a specified directory.
+Each scenario randomly samples from three load types (`residential`,
+`commercial`, `industrial`) and two storage types (`battery`, `flywheel`).
+
+### Installation
+
+Install the package in editable mode using pip:
+
+```bash
+pip install -e .
+```
