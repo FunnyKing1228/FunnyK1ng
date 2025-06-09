@@ -28,3 +28,15 @@ The code currently provides minimal placeholders for key components such as
 `SafetyNet`, `LocalTrainer`, and a simple `fed_avg` aggregator. Further
 implementation is required to realize the full functionality described in the
 project blueprint.
+
+### SafetyNet Training
+
+Sample labelled data for the SafetyNet model lives under `microgrid-fedrl/data/safetynet/train.csv`.
+Run the training script below to produce `safety_model.pt` which is loaded by
+`SafetyNet.is_safe`:
+
+```bash
+python3 microgrid-fedrl/src/safety/train.py
+```
+
+Unit tests in `microgrid-fedrl/tests/` validate the behaviour of the API.
