@@ -1,0 +1,5 @@
+learning_rate: 3e-4
+local_episodes: 20
+n_step: 3
+cluster_size: 3
+safety_tau: 0.7
