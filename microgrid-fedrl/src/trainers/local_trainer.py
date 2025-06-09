@@ -3,13 +3,14 @@ class LocalTrainer:
 
     LOCAL_EPISODES = 20
 
-    def __init__(self, agent, env, safety):
+    def __init__(self, agent, env, safety, episodes: int | None = None):
         self.agent = agent
         self.env = env
         self.safety = safety
+        self.local_episodes = episodes if episodes is not None else self.LOCAL_EPISODES
 
     def train(self):
-        for ep in range(self.LOCAL_EPISODES):
+        for ep in range(self.local_episodes):
             state = self.env.reset()
             done = False
             while not done:
